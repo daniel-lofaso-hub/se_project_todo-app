@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This is a very simple to-do app.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+With the app, you can add/remove to-do items to a list with an optional due date, and check or uncheck each item.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+In this project, I refactored the JavaScript in OOP, structuring the file directory using modules.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- [Link to the project on Github](https://daniel-lofaso-hub.github.io/se_project_todo-app/)
