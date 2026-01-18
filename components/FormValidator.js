@@ -32,8 +32,8 @@ class FormValidator {
     }
   }
 
-  _hasInvalidInput(inputList) {
-    return inputList.some((inputElement) => {
+  _hasInvalidInput() {
+    return this._inputList.some((inputElement) => {
       return !inputElement.validity.valid;
     });
   }
@@ -74,15 +74,17 @@ class FormValidator {
   }
 
   _disableButton() {
-    const buttonEl = this._formElement.querySelector(".popup__button");
-    buttonEl.disabled = true;
-    buttonEl.classList.add(this._inactiveButtonClass);
+    const buttonElement = this._formElement.querySelector(
+      this._submitButtonSelector,
+    );
+    buttonElement.classList.add(this._inactiveButtonClass);
+    buttonElement.disabled = true;
   }
 
   resetValidation() {
+    this._formElement.reset();
     this._formElement.querySelectorAll(this._inputSelector).forEach((input) => {
       this._hideInputError(input);
-      this._formElement.reset();
     });
     this._disableButton();
   }
